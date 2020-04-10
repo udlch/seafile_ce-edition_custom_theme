@@ -1166,6 +1166,13 @@ dd {
     background-color:var(--light-bg)
 }
 
+.seafile-ed-hovermenu .seafile-ed-hovermenu-btn {
+    background-color: var(--light-bg);
+}
+
+.seafile-ed-hovermenu .seafile-ed-hovermenu-triangle {
+    background: var(--light-bg);
+}
 
 
 /******************
