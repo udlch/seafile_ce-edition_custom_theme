@@ -2,23 +2,23 @@
 :root {
 
     /*background*/
-    --main-bg: #2a2a2e;                 /* var(--main-bg) */
-    --dark-bg: #222;                    /* var(--dark-bg) */
-    --light-bg: #38383d;                /* var(--light-bg) */
+    --main-bg: #2a2a2e;                
+    --dark-bg: #222;                   
+    --light-bg: #38383d;             
 
     /*font*/
-    --main-font: #ababae;               /* var(--main-font) */
-    --light-font: #eee;                 /* var(--light-font) */
-    --dark-font: #888;                  /* var(--dark-font) */
+    --main-font: #ababae;               
+    --light-font: #eee;                 
+    --dark-font: #888;                  
 
     /*theme*/
-    --main-theme: #1f66ad;              /* var(--main-theme) */
-    --theme-font: #63a3e3;              /* var(--theme-font) */
+    --main-theme: #1f66ad;              
+    --theme-font: #63a3e3;              
 
     /*other*/
-    --border: #111;                     /* var(--border) */
-    --shadow: rgba(34, 34, 34, 0.9);    /* var(--shadow) */
-    --no-shadow: rgba(0, 0, 0, 0);      /* var(--no-shadow) */
+    --border: #111;                     
+    --shadow: rgba(34, 34, 34, 0.9);    
+    --no-shadow: rgba(0, 0, 0, 0);      
     --green: #326732;
     --info: #676732;
     --error: #673f32;
@@ -1393,4 +1393,8 @@ pre {
 
 .cm-s-default .cm-meta {
     color: #da7d6c;
+}
+
+.cm-s-default .cm-attribute {
+    color: #8888dd;
 }
