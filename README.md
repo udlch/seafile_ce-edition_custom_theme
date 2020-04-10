@@ -29,6 +29,6 @@ This is my first experience with .css and site customization and I know I lost m
 ### Known issues:
 
 * popup messages
-* dropdown menus
+* some dropdown menus
 
 If you find any issues please contact me or add new issue.
