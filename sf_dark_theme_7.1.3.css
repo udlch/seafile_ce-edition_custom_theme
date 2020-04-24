@@ -1552,3 +1552,13 @@ pre {
 .css-15k3avv {
     background-color: var(--light-bg) !important;
 }
+
+.css-15agui6, [data-css-15agui6], .css-16hxgpx, [data-css-16hxgpx] {
+    background-color: var(--light-bg) !important;
+    box-shadow: 0 0 0 2px var(--shadow) !important;
+}
+
+.css-1tlqf55 {
+    color: var(--main-font) !important;
+}
+
