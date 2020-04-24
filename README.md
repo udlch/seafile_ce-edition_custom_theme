@@ -1,5 +1,5 @@
 
-### custom .css for selfhosted Seafile community edition v. 7.0.5
+### custom .css for selfhosted Seafile community edition v. 7.1.3
 
 Dark theme for almost all pages and elements:
 
