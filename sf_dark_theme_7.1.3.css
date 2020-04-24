@@ -970,7 +970,7 @@ dd {
 }
 
 .sf-editor-rich-menu {
-    background-color: var(--dark-bg);
+    background-color: var(--main-bg);
 }
 
 .plain-editor-left-panel {
@@ -1009,7 +1009,7 @@ dd {
 }
 
 .upload-localimg-hover .btn:hover, .insert-file:hover, .rich-icon-btn-hover:hover {
-    background-color: var(--main-theme);
+    /*background-color: var(--main-theme);*/
     color: var(--light-font);
 }
 
@@ -1050,6 +1050,10 @@ dd {
     color:var(--dark-font);
 }
 
+.rich-icon-btn-disabled:hover {
+    color:var(--dark-font);
+}
+
 .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
     color: var(--dark-font);
 }
@@ -1067,7 +1071,7 @@ dd {
 }
 
 .article pre {
-    background: var(--main-bg);
+    background: var(--light-bg);
 }
 
 .article h2 {
@@ -1082,6 +1086,27 @@ dd {
     border-left: 1px solid var(--dark-font);
     border-top: 1px solid var(--dark-font);
 }
+
+.article hr.active {
+    border-top: 1px solid var(--dark-font);
+}
+
+.article .selected-cell {
+    background-color: var(--dark-bg);
+}
+
+.article .selected-cell-top:before {
+    border-top:1px double var(--main-theme)
+   }
+   .article .selected-cell-bottom:before {
+    border-bottom:1px double var(--main-theme)
+   }
+   .article .selected-cell-left:before {
+    border-left:1px double var(--main-theme)
+   }
+   .article .selected-cell-right:before {
+    border-right:1px double var(--main-theme)
+   }
 
 .seafile-editor-side-panel {
     border-left: 1px solid var(--border);
@@ -1252,6 +1277,11 @@ dd {
     box-shadow: 0 1px 0 var(--shadow);
 }
 
+.article .language-type select {
+    background-color: var(--dark-bg);
+}
+
+
 /******************
   comment
 *****************/
@@ -1415,7 +1445,7 @@ textarea {
     border: 1px solid var(--border);
     -webkit-box-shadow: 0 0 6px var(--shadow);
     box-shadow: 0 0 6px var(--shadow);
-    background: var(--dark-bg);
+    background: var(--main-bg);
 }
 
 
