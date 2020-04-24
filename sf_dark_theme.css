@@ -142,7 +142,7 @@ table td, table th {
     background:var(--main-bg);
    }
 
-a, a:hover, .grid-file-name-link, .op-target {
+a, a:hover, .grid-file-name-link, .op-target, a:focus {
     color: var(--theme-font);
 }
 .path-link {
@@ -1193,6 +1193,32 @@ dd {
     background: var(--light-bg);
 }
 
+.seafile-editor-help {
+    background-color: var(--light-bg);
+    border-left: 1px solid var(--border);
+}
+
+.seafile-editor-help .help-header {
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--border);
+}
+
+
+.help-shortcut {
+    color: var(--main-font);
+    border-bottom: 1px solid var(--border);
+}
+
+.help-content .help-shortcut-type {
+    border-bottom: 1px solid var(--border);
+}
+
+.help-shortcut .key {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border);
+    -webkit-box-shadow: 0 1px 0 var(--border);
+    box-shadow: 0 1px 0 var(--shadow);
+}
 
 /******************
   comment
