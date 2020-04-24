@@ -393,7 +393,7 @@ input[type=text]:focus, input[type="password"]:focus {
       border-color: var(--border)!important; }
     .btn-secondary:focus, .btn-secondary.focus, .btn-primary:focus, .btn-primary.focus {
       box-shadow: 0 0 0 2px var(--shadow)!important; }
-    .btn-secondary.disabled, .btn-secondary:disabled, .btn-primary.disabled, .btn-primary:disabled {
+    .btn-secondary.disabled, .btn-secondary:disabled, .btn-primary.disabled, .btn-primary:disabled, .btn-outline-primary:disabled {
       color: var(--dark-font)!important;
       background-color: var(--main-bg)!important;
       border-color: var(--border)!important; }
