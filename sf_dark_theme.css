@@ -2,21 +2,21 @@
 :root {
 
     /*background*/
-    --main-bg: #2a2a2e;                
-    --dark-bg: #222;                   
-    --light-bg: #38383d;             
+    --main-bg: #282c34;                
+    --dark-bg: #21252b;                   
+    --light-bg: #333842;             
 
     /*font*/
-    --main-font: #ababae;               
+    --main-font: #ababab;               
     --light-font: #eee;                 
     --dark-font: #888;                  
 
     /*theme*/
-    --main-theme: #1f66ad;              
-    --theme-font: #63a3e3;              
+    --main-theme: #6C86B7;              
+    --theme-font: #6C86B7;              
 
     /*other*/
-    --border: #111;                     
+    --border: rgba(34, 34, 34, 0.9);                    
     --shadow: rgba(34, 34, 34, 0.9);    
     --no-shadow: rgba(0, 0, 0, 0);      
     --green: #326732;
@@ -46,7 +46,7 @@ body {
 
 .dir-content-nav {
     background-color: var(--main-bg);
-    border-right: 0px solid var(--border);
+    border-right: 1px solid var(--border);
 }
 
 .border-left-show:before {
@@ -59,7 +59,7 @@ body {
 
 .side-search-form .input, .side-search-form .input:focus {
     background: var(--light-bg);
-    box-shadow: inset 0 1px 2px var(--border);
+    box-shadow: inset 0 1px 2px var(--shadow);
 }
 
 .btn-white, .tabnav button, .repo-file-list-topbar .op-btn {
@@ -208,7 +208,7 @@ a, a:hover, .grid-file-name-link, .op-target {
 }
 
 .nav .nav-item .nav-link.active {
-    color: var(--main-font);
+    color: var(--light-font);
     border-bottom: 0rem solid var(--no-shadow);
 }
 
@@ -276,7 +276,7 @@ a, a:hover, .grid-file-name-link, .op-target {
 
 .close {
     color: var(--main-font);
-    text-shadow: 0 1px 0 var(--border);
+    text-shadow: 0 1px 0 var(--shadow);
 }
 
 .form-control {
@@ -325,7 +325,7 @@ input[type=text]:focus, input[type="password"]:focus {
 
 .account-popup a.item:hover {
     background: var(--main-theme);
-    color: var(--main-font);
+    color: var(--light-font);
 }
 
 .account-popup a.item {
@@ -365,8 +365,8 @@ input[type=text]:focus, input[type="password"]:focus {
 
 .cur-view-detail {
     background-color: var(--main-bg);
-    -webkit-box-shadow: -1px 0 2px 0 var(--dark-bg);
-    box-shadow: -1px 0 2px 0 var(--dark-bg);
+    -webkit-box-shadow: -1px 0 2px 0 var(--shadow);
+    box-shadow: -1px 0 2px 0 var(--shadow);
 }
 
 .detail-header {
@@ -378,12 +378,16 @@ input[type=text]:focus, input[type="password"]:focus {
     border-left: 1px solid var(--border);
 }
 
+.text-secondary {
+    color: var(--light-font) !important;
+}
+
 .btn-secondary, .btn-primary {
     color: var(--main-font);
     background-color: var(--light-bg);
     border-color: var(--border); }
     .btn-secondary:hover, .btn-primary:hover {
-      color: var(--main-font);
+      color: var(--light-font);
       background-color: var(--main-theme);
       border-color: var(--border); }
     .btn-secondary:focus, .btn-secondary.focus, .btn-primary:focus, .btn-primary.focus {
@@ -515,17 +519,27 @@ input[type=text]:focus, input[type="password"]:focus {
     color: var(--main-font);
 }
 
-.side-tabnav-tabs .tab-cur a, .side-tabnav-tabs .tab-cur a:hover {
-    background-color: var(--main-theme);
-    color: var(--main-font);
-}
 
 .side-tabnav-tabs .tab a {
     color: var(--main-font);
 }
 
 .side-tabnav-tabs .tab-cur [class^="sf2-icon-"], .side-tabnav-tabs .tab-cur [class^="sf3-font-"] {
-    color: var(--main-font);
+    color: var(--light-font);
+}
+
+.side-tabnav-tabs .tab-cur a:hover {
+    background-color: var(--main-theme);
+    color: var(--light-font);
+}
+
+.side-tabnav-tabs .tab-cur a:focus {
+    color: var(--light-font);
+}
+
+.side-tabnav-tabs .tab-cur a {
+    background-color: var(--main-theme);
+    color: var(--light-font);
 }
 
 .header-bar {
@@ -597,10 +611,13 @@ button, input[type=submit], input[type=button], input.submit, .sf-btn-link, .fil
 }
 
 input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, button:hover, .sf-btn-link:hover, .fileinput-button:hover {
- background: var(--light-bg);
+ background: var(--main-theme);
+ color: var(--light-font);
 }
 
-
+.web-setting-form .cancel, .inline-rename-form .cancel {
+    color: var(--error);
+}
 
 .select2-drop {
     background: var(--light-bg);
@@ -829,7 +846,7 @@ input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, but
 .file-view-tip {
     background: var(--light-bg);
     border: 1px solid var(--dark-bg);
-    box-shadow: 0 0 6px var(--dark-bg);
+    box-shadow: 0 0 6px var(--shadow);
 }
 
 .file-view-header {
@@ -837,8 +854,8 @@ input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, but
 }
 
 .ReactCodeMirror {
-    -webkit-box-shadow: 0 0 6px var(--dark-bg);
-    box-shadow: 0 0 6px var(--border);
+    -webkit-box-shadow: 0 0 6px var(--shadow);
+    box-shadow: 0 0 6px var(--shadow);
     border: 1px solid var(--border);
 }
 
@@ -914,14 +931,14 @@ dd {
  *****************/
 
 .sf-md-viewer-topbar-first, .sf-md-viewer-topbar-first-narrow {
-    background-color: var(--main-bg);
+    background-color: var(--dark-bg);
     border-bottom: 1px solid var(--border);
-    -webkit-box-shadow: 0 3px 2px -2px var(--border);
-    box-shadow: 0 3px 2px -2px var(--border);
+    -webkit-box-shadow: 0 3px 2px -2px var(--shadow);
+    box-shadow: 0 3px 2px -2px var(--shadow);
 }
 
 .sf-editor-rich-menu {
-    background-color: var(--main-bg);
+    background-color: var(--dark-bg);
 }
 
 .plain-editor-left-panel {
@@ -937,8 +954,8 @@ dd {
 .seafile-editor-topbar, .seafile-rich-editor-topbar {
     background-color: var(--main-bg);
     border-bottom: 1px solid var(--border);
-    -webkit-box-shadow: 0 2px 1px -1px var(--border);
-    box-shadow: 0 2px 1px -1px var(--border);
+    -webkit-box-shadow: 0 2px 1px -1px var(--shadow);
+    box-shadow: 0 2px 1px -1px var(--shadow);
 }
 
 .header-list-container, .seafile-rich-editor-topbar .editor-btn-group {
@@ -961,6 +978,7 @@ dd {
 
 .upload-localimg-hover .btn:hover, .insert-file:hover, .rich-icon-btn-hover:hover {
     background-color: var(--main-theme);
+    color: var(--light-font);
 }
 
 .custom-dropdown-list .dropdown-list-toggle:hover {
@@ -978,13 +996,14 @@ dd {
 
 .header-list-container .list-dropdown {
     border: 1px solid var(--border);
-    -webkit-box-shadow: 0 0 2px var(--border);
-    box-shadow: 0 0 2px var(--border);
+    -webkit-box-shadow: 0 0 2px var(--shadow);
+    box-shadow: 0 0 2px var(--shadow);
     background-color: var(--main-bg);
 }
 
 .header-list-container .header-list .list-dropdown-item:hover {
     background-color: var(--main-theme);
+    color: var(--light-font);
 }
 
 .upload-localimg .btn, .rich-icon-btn {
@@ -1105,7 +1124,7 @@ dd {
    }
    .file-chooser-item .item-active,
    .file-chooser-item .item-info:hover {
-    -webkit-box-shadow:inset 0 0 1px var(--border);
+    -webkit-box-shadow:inset 0 0 1px var(--shadow);
     box-shadow:inset 0 0 1px var(--shadow);
    }
    .file-chooser-item .item-info:hover {
@@ -1228,7 +1247,7 @@ textarea {
 }
 
 .custom-switch-input:focus ~ .custom-switch-indicator {
-    box-shadow: 0 0 0 1px var(--dark-bg);
+    box-shadow: 0 0 0 1px var(--shadow);
     border-color: var(--border); }
 
     .custom-switch-indicator {
@@ -1256,7 +1275,7 @@ textarea {
 }
 
 .btn-success {
-    color: var(--main-font);
+    color: var(-);
     background-color: var(--main-theme);
     border-color: var(--main-theme);}
     .btn-success:hover {
