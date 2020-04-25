@@ -25,6 +25,7 @@ Custom light/dark theme for almost all pages and elements:
 *  etc.
 
 **Added auto switch light/dark theme.**
+
 This is my first experience with .css and site customization and I know I lost many and many details.
 
 ### Known issues:
