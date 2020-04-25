@@ -1,7 +1,7 @@
 
 ### custom .css for selfhosted Seafile community edition v. 7.1.3
 
-Dark theme for almost all pages and elements:
+Custom light/dark theme for almost all pages and elements:
 
 <details>
   <summary>Screenshots</summary>
@@ -24,6 +24,7 @@ Dark theme for almost all pages and elements:
 * MD editor
 *  etc.
 
+**Added auto switch light/dark theme.**
 This is my first experience with .css and site customization and I know I lost many and many details.
 
 ### Known issues:
