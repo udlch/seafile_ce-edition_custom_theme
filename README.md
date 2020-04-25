@@ -6,13 +6,15 @@ Custom light/dark theme for almost all pages and elements:
 <details>
   <summary>Screenshots</summary>
   
-![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_dark_theme/master/Screenshot_page.png)
+![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_custom_theme/master/DT_admin.png)
 
-![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_dark_theme/master/Screenshot_page1.png)
+![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_custom_theme/master/DT_editor.png)
 
-![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_dark_theme/master/Screenshot_css.png)
+![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_custom_theme/master/DT_main.png)
 
-![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_dark_theme/master/Screenshot_md.png)
+![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_custom_theme/master/LT_admin.png)
+
+![](https://raw.githubusercontent.com/u-alexey/seafile_ce-edition_custom_theme/master/LT_main.png)
 
 </details>
 
@@ -27,10 +29,5 @@ Custom light/dark theme for almost all pages and elements:
 **Added auto switch light/dark theme.**
 
 This is my first experience with .css and site customization and I know I lost many and many details.
-
-### Known issues:
-
-* popup messages
-* some dropdown menus
 
 If you find any issues please contact me or add new issue.
