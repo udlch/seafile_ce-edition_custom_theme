@@ -1,34 +1,63 @@
 
-:root {
+@media (prefers-color-scheme: dark) {
+    :root {
 
-    /*background*/
-    --main-bg: #282c34;                
-    --dark-bg: #21252b;                   
-    --light-bg: #333842;             
+        --main-bg: #282c34;                
+        --dark-bg: #21252b;                   
+        --light-bg: #333842;             
 
-    /*font*/
-    --main-font: #ababab;               
-    --light-font: #eee;                 
-    --dark-font: #888;                  
+        --main-font: #ababab;               
+        --light-font: #eee;                 
+        --dark-font: #888;                  
 
-    /*theme*/
-    --main-theme: #6C86B7;              
-    --theme-font: #6C86B7;              
+        --main-theme: #6C86B7;              
+        --theme-font: #6C86B7;              
 
-    /*other*/
-    --border: rgba(34, 34, 34, 0.9);                    
-    --shadow: rgba(34, 34, 34, 0.9);    
-    --no-shadow: rgba(0, 0, 0, 0);      
-    --green: #326732;
-    --info: #676732;
-    --error: #673f32;
-  }
+        --border: rgba(34, 34, 34, 0.9);                    
+        --shadow: rgba(10, 10, 10, 0.8);
+        --no-shadow: rgba(0, 0, 0, 0);      
+        --green: #326732;
+        --info: #676732;
+        --error: #673f32;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-bg: #fff;                
+        --dark-bg: rgb(203, 223, 233);                   
+        --light-bg: rgb(241, 250, 255);            
+
+        --main-font: #404650;               
+        --light-font: #1a1a1a;                 
+        --dark-font: #535d68;                  
+
+        --main-theme: rgb(190, 213, 255);              
+        --theme-font: rgb(92, 113, 153);              
+
+        --border: rgba(230, 230, 230, 0.6);                    
+        --shadow: rgba(0, 0, 0, 0.3);         
+        --no-shadow: rgba(0, 0, 0, 0);      
+        --green: #326732;
+        --info: #676732;
+        --error: #673f32;
+    }
+}
+
+
 
 
 /******************
     MAIN PAGE
 *****************/
 
+.star-empty {
+    color: var(--dark-font);
+}
+
+.cur-view-container .fa-star.fas {
+    color: var(--dark-font);
+}
 
 .cur-view-path {
     background: var(--main-bg) !important;
@@ -271,7 +300,11 @@ a, a:hover, .grid-file-name-link, .op-target, a:focus {
 
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
     color: var(--main-font);
-    background-color: var(--main-bg);
+    background-color: transparent;
+}
+
+#my-info {
+    color: var(--main-font);
 }
 
 .close {
@@ -280,14 +313,14 @@ a, a:hover, .grid-file-name-link, .op-target, a:focus {
 }
 
 .form-control {
-    color: var(--light-font);
+    color: var(--main-font);
     background-color: var(--light-bg);
     border: 1px solid var(--border);}
   .form-control:focus {
         color: var(--light-font);
         background-color: var(--light-bg);
         border: 1px solid var(--border);
-        box-shadow: 0 0 0 2px var(--shadow); }
+        box-shadow:  0px 0px 1px var(--shadow); }
   .form-control::placeholder {
         color: var(--main-font);}
   .form-control:disabled, .form-control[readonly] {
@@ -335,7 +368,7 @@ input[type=text]:focus, input[type="password"]:focus {
 
 #quota-bar {
     border: 1px solid var(--dark-bg);
-    background: var(--dark-font);
+    background: var(--main-bg);
 }
 
 #quota-usage {
@@ -392,7 +425,7 @@ input[type=text]:focus, input[type="password"]:focus {
       background-color: var(--main-theme)!important;
       border-color: var(--border)!important; }
     .btn-secondary:focus, .btn-secondary.focus, .btn-primary:focus, .btn-primary.focus {
-      box-shadow: 0 0 0 2px var(--shadow)!important; }
+      box-shadow: 0 0 0 0px var(--shadow)!important; }
     .btn-secondary.disabled, .btn-secondary:disabled, .btn-primary.disabled, .btn-primary:disabled, .btn-outline-primary:disabled {
       color: var(--dark-font)!important;
       background-color: var(--main-bg)!important;
@@ -406,9 +439,29 @@ input[type=text]:focus, input[type="password"]:focus {
       .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
       .show > .btn-secondary.dropdown-toggle:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, 
       .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-        box-shadow: 0 0 0 2px var(--shadow)!important; 
+        box-shadow: 0 0 0 0px var(--shadow)!important; 
 }
 
+.btn-outline-primary {
+    color: var(--main-font);
+    border-color: var(--border);}
+    .btn-outline-primary:hover {
+      color: var(--light-font);
+      background-color: var(--main-theme);
+      border-color: var(--border); }
+    .btn-outline-primary:focus, .btn-outline-primary.focus {
+        box-shadow: 0 0 0 0px var(--shadow);  }
+    .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+      color: var(--dark-font);}
+    .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+    .show > .btn-outline-primary.dropdown-toggle {
+        color: var(--main-font);
+        background-color: var(--light-bg);
+        border-color: var(--border); }
+      .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+      .show > .btn-outline-primary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0px var(--shadow); 
+}
 
 .uploader-list-view {
     border: 1px solid var(--border);
@@ -432,7 +485,7 @@ input[type=text]:focus, input[type="password"]:focus {
 }
 
 .progress {
-    background-color: var(--dark-font);
+    background-color: var(--main-bg);
 }
 
 .file-chooser-item .item-active {
@@ -616,11 +669,12 @@ input:focus, button:focus, select:focus, textarea:focus {
     border-color: var(--border);
 }
 
-input, button, select, textarea {
-    border-color: var(--main-bg)!important;
+input, button, select {
+    border-color: var(--main-bg);
 }
 
 textarea {
+    border-color: var(--main-bg)!important;
     border-radius: 0px!important;
 }
 
@@ -628,9 +682,16 @@ body, input, textarea, button, select {
     color: var(--main-font);
 }
 
+#info-bar {
+    color: var(--theme-font);
+    background: var(--dark-bg);
+    border: 1px solid var(--main-theme);
+}
+
 button, input[type=submit], input[type=button], input.submit, .sf-btn-link, .fileinput-button, select {
     background: var(--light-bg);
     border: 1px solid var(--border);
+    color: var(--main-font);
 }
 
 input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, button:hover, .sf-btn-link:hover, .fileinput-button:hover {
@@ -821,6 +882,10 @@ input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, but
     text-align: right;
 }
 
+.text-orange {
+    color: var(--theme-font) !important;
+}
+
 /******************
     LOGIN PAGE
 *****************/
@@ -1002,6 +1067,7 @@ dd {
 .button-container .btn, .button-container .rich-icon-btn, .rich-icon-btn {
     background-color: var(--main-bg);
 }
+
 
 .seafile-rich-editor-topbar .editor-btn-group {
     border-right: 1px solid var(--border);
@@ -1335,7 +1401,7 @@ textarea {
 }
 
 .custom-switch-input:focus ~ .custom-switch-indicator {
-    box-shadow: 0 0 0 1px var(--shadow);
+    box-shadow: 0 0 0 0px var(--shadow);
     border-color: var(--border); }
 
     .custom-switch-indicator {
@@ -1344,7 +1410,7 @@ textarea {
 }
 
 .participants .add-participants i {
-    color: var(--main-theme);
+    color: var(--main-font);
     border: 0px solid var(--border);
 }
 
@@ -1421,7 +1487,7 @@ textarea {
       background-color: var(--green);
       border-color: var(--green); }
     .btn-success:focus, .btn-success.focus {
-      box-shadow: 0 0 0 1px var(--no-shadow); }
+      box-shadow:  0 0 1px var(--no-shadow); }
     .btn-success.disabled, .btn-success:disabled {
       color: var(--dark-font);
       background-color: var(--main-theme);
@@ -1433,7 +1499,7 @@ textarea {
         border-color: var(--green); }
       .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
       .show > .btn-success.dropdown-toggle:focus {
-        box-shadow: 0 0 0 2px var(--no-shadow); 
+        box-shadow:  0 0 2px var(--no-shadow); 
 }
 
 #image-view {
@@ -1568,7 +1634,7 @@ pre {
 .css-2o5izw {
     background-color: var(--light-bg) !important;
     border-color: var(--border) !important;
-    box-shadow: 0 0 0 2px var(--shadow) !important;
+    box-shadow:  0 0 2px var(--shadow) !important;
 }
 
 .css-xp4uvy {
@@ -1585,7 +1651,7 @@ pre {
 
 .css-15agui6, [data-css-15agui6], .css-16hxgpx, [data-css-16hxgpx] {
     background-color: var(--light-bg) !important;
-    box-shadow: 0 0 0 2px var(--shadow) !important;
+    box-shadow:  0 0 2px var(--shadow) !important;
 }
 
 .css-1tlqf55 {
